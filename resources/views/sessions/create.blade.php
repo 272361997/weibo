@@ -1,4 +1,3 @@
-
 @extends('layouts.default')
 @section('title', '登录')
 
@@ -24,6 +23,13 @@
             <input type="password" name="password" class="form-control" value="{{ old('password') }}">
           </div>
 
+          <div class="form-group">
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" name="remember" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">记住我</label>
+            </div>
+          </div>
+
           <button type="submit" class="btn btn-primary">登录</button>
       </form>
 
@@ -33,4 +39,4 @@
     </div>
   </div>
 </div>
-@endsection
+@stop
