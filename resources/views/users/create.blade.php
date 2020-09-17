@@ -8,7 +8,8 @@
     </div>
     <div class="card-body">
       <form method="POST" action="{{ route('users.store') }}">
-          <div class="form-group">
+        {{ csrf_field() }}
+        <div class="form-group">
             <label for="name">名称：</label>
             <input type="text" name="name" class="form-control" value="{{ old('name') }}">
           </div>
